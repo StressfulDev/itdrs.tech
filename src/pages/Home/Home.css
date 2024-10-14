@@ -1,0 +1,917 @@
+@font-face {
+    font-family: 'NoiGroteskTrial bold';
+    src: url("../../assets/fonts/NoiGroteskTrial-Bold.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Variable Flex Trial';
+    src: url("../../assets/fonts/NoiGroteskTrial-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../../assets/fonts/Inter-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter bold';
+    src: url("../../assets/fonts/Inter-Bold.ttf");
+    font-display: swap;
+}
+
+.bold {
+    /*font-family: "Inter bold"!important;*/
+    font-weight: 600;
+}
+
+.modal-dialog-enter {
+    opacity: 0;
+}
+
+.modal-dialog-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+.modal-dialog-exit {
+    opacity: 1;
+}
+
+.modal-dialog-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+.buttons-block {
+    font-family: "Noi Variable Flex Trial" !important;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.projects-links-button {
+    display: flex;
+}
+
+.logo {
+    cursor: pointer;
+    width: 100%;
+}
+
+.hero {
+    background-color: #1B1C1D;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hero-spiral {
+    pointer-events: none;
+    position: absolute;
+    top: -269px;
+    right: -151px;
+    z-index: 1;
+}
+
+.hero-arrow {
+    margin-left: 3.75rem;
+}
+
+.hero-arrow:hover {
+    cursor: pointer;
+}
+
+.hero-title {
+    color: #FFFFFF;
+    font-family: "NoiGroteskTrial bold";
+    font-size: 5rem;
+    max-width: 1120px;
+    padding-bottom: 5rem;
+    margin-top: 13rem;
+    position: relative;
+    z-index: 2;
+}
+
+.highlight {
+    color: #388EFF;
+}
+
+.accordion-section {
+    position: relative;
+}
+
+.accordion-wrap {
+    display: flex;
+    max-width: 1680px;
+    justify-content: end;
+    margin: 0 auto;
+}
+
+.accordion-block {
+    max-width: 1377px;
+    padding: 0 4.38rem 1.25rem;
+    margin-top: 5.44rem;
+    margin-bottom: 4.25rem;
+}
+
+.accordion-spiral {
+    position: absolute;
+    left: 0;
+    top: 4.19rem;
+    z-index: -1;
+}
+
+.accordion-bold {
+    font-family: "Inter bold";
+}
+
+.call-to-action {
+    background-color: #388EFF;
+    border: #388EFF;
+    color: #FFFFFF;
+    border-radius: 57px;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 30px 0 62px;
+}
+
+
+.cards {
+    margin-bottom: 8.9rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 850px;
+    grid-auto-rows: auto;
+    gap: 1.25rem;
+    grid-template-areas:
+        "green green"
+        "black blue"
+        "light-blue light-blue"
+}
+
+.card {
+    display: flex;
+    border-radius: 3rem;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    align-items: baseline;
+}
+
+.card-content {
+    padding: 4.7rem;
+    z-index: 2;
+}
+
+.card-title {
+    font-family: "Noi Variable Flex Trial";
+    font-size: 4.93rem;
+    font-weight: 400;
+}
+
+.card-description {
+    font-family: "Inter";
+    font-size: 1.75rem;
+    margin-top: 3rem;
+    margin-left: 5.31rem;
+    padding-right: 15px;
+}
+
+.card-icon {
+    width: auto;
+    margin-right: 3rem;
+}
+
+.vector {
+    position: absolute;
+    width: 75rem;
+    bottom: 25px;
+    right: 35px;
+}
+
+.green {
+    background-color: #BFFDE8;
+    grid-area: green;
+}
+
+.black {
+    position: relative;
+    padding-bottom: 9.38rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    grid-area: black;
+}
+
+.blue {
+    position: relative;
+    padding-bottom: 9.38rem;
+    background-color: #388EFF;
+    color: #FFFFFF;
+    grid-area: blue;
+}
+
+.lightBlue {
+    position: relative;
+    background-color: #7FB4FB;
+    grid-area: light-blue;
+}
+
+.green-spiral-mobile,
+.black-spiral-mobile,
+.blue-spiral-mobile,
+.lightBlue-spiral-mobile {
+    display: none;
+}
+
+.green .card-description {
+    max-width: 42.5rem;
+}
+
+.lightBlue .card-description {
+    max-width: 41.25rem;
+}
+
+.contact-wrapper {
+    max-width: 1377px;
+    padding-left: 3.9rem;
+    padding-right: 3.9rem;
+    margin: 0 auto;
+}
+
+.contact-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.contact-title {
+    font-family: "Noi Variable Flex Trial";
+    font-size: 5.19rem;
+    font-weight: 400;
+}
+
+.contact-form-wrapper {
+    width: 36.9rem;
+    margin-bottom: 9.7rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-input,
+.contact-form-button {
+    font-family: "Noi Variable Flex Trial";
+    border-radius: 3rem;
+
+}
+
+.contact-form-input[type="email"],
+.contact-form-input {
+    font-size: 1.9rem;
+}
+
+.contact-form-input {
+    background-color: #E3EBF6;
+    border: #E3EBF6;
+    margin-bottom: 1.9rem;
+}
+
+.contact-form-button {
+    height: 5.63rem;
+    background-color: #388EFF;
+    border: #388EFF;
+    font-size: 1.56rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.contact-form-button:hover,
+.call-to-action:hover {
+    background-color: #64a6f8;
+}
+
+.contact-form-input:focus {
+    outline: none;
+    background-color: #e6e9ef;
+}
+
+.contact-form-input::placeholder {
+    color: #000000;
+    font-size: 2.38rem;
+    font-family: "Noi Variable Flex Trial";
+}
+
+.contact-form-input:focus::placeholder {
+    color: transparent;
+}
+
+.email {
+    height: 5.63rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+}
+.language-selector, .language-selector a {
+    font-family: 'Noi Variable Flex Trial';
+    font-style: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none!important;
+    font-size: 30px;
+    z-index: 10;
+}
+
+.language-selector {
+    margin-right: 5rem;
+}
+
+.message {
+    resize: none;
+    height: 15.44rem;
+    overflow: auto;
+    padding-top: 2.31rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+}
+
+@media (max-width: 1524px) {
+    .buttons-block {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1508px) {
+    .contact-form-wrapper {width: 36rem;}
+
+    .card-icon {
+        margin-right: 1.5rem;
+    }
+    .card-description {
+        margin-left: 4rem;
+    }
+}
+
+@media (min-width: 1450px) and (max-width: 1600px) {
+    .cards {grid-template-columns: 1fr 750px;}
+
+    .vector {width: 70rem;}
+
+    .black, .blue {padding-bottom: 0;}
+}
+
+@media (max-width: 1400px) {
+    .card-content {padding: 4rem 3rem 4rem 2rem;}
+
+    .black, .blue {padding-bottom: 10px;}
+}
+
+@media (max-width: 1360px) {
+    .projects-header {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1450px) {
+    .cards {grid-template-columns: 1fr 700px;}
+
+    .vector {width: 65rem;}
+}
+
+@media (max-width: 1280px) {
+    .hero-spiral {right: -335px;}
+
+    .vector {
+        width: 57rem;
+        bottom: 55px;
+        right: -5px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+        max-width: 925px;
+    }
+
+    .accordion-spiral {left: -12rem;}
+
+    .accordion-block {margin-bottom: 2.5rem;}
+
+    .cards {
+        gap: 0.9rem;
+        grid-template-columns: 1fr 640px;
+    }
+
+    .card-content {padding: 4rem 2rem 4rem 1.5rem;}
+
+    .card-title {font-size: 3rem;}
+
+    .card-description {
+        font-size: 1.35rem;
+        margin-bottom: 50px;
+    }
+
+    .green .spiral {width: 470px;}
+
+    .contact-title {font-size: 4.38rem;}
+
+    .contact-form-wrapper {
+        width: 32.31rem;
+    }
+
+    .contact-form-input,
+    .contact-form-input[type="email"],
+    .contact-form-input::placeholder {
+        font-size: 1.88rem;
+    }
+
+    .buttons-block {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1185px) {
+    .buttons-block {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1138px) {
+    .content,
+    .contact-wrapper {
+        padding-left: 1.56rem;
+        padding-right: 1.56rem;
+    }
+
+    .cards {grid-template-columns: 1fr 570px;}
+
+    .card-title {font-size: 4rem;}
+
+    .card-content {padding: 2rem 2rem 3rem 3rem;}
+
+    .card-icon {
+        margin-right: 1rem;
+        width: 1.88rem
+    }
+
+    .card-description {margin-left: 3.5rem}
+
+    .language-selector {
+        margin-right: 4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .top-block,
+    .content,
+    .contact-wrapper {
+        padding-left: 1.56rem;
+        padding-right: 1.56rem;
+    }
+
+    .hero-spiral {right: -500px;}
+
+    .vector {
+        width: 57rem;
+        right: 50px;
+        bottom: 44px;
+    }
+
+    .hero-title {
+        font-size: 3.12rem;
+        max-width: 701px;
+        margin-top: 5.31rem;
+    }
+
+    .hero-arrow {
+        width: 1.88rem;
+        height: 1.88rem;
+        margin-left: 2.5rem;
+    }
+
+    .accordion-spiral {left: -20rem;}
+
+    .accordion-block {
+        padding-right: 2rem;
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+    }
+
+    .call-to-action {margin-bottom: 50px;}
+
+    .card-title {font-size: 3rem;}
+
+    .cards {grid-template-columns: 1fr 515px;}
+
+    .card-description {
+        font-size: 1.25rem;
+        margin-top: 1.3rem;
+        margin-left: 3rem;
+    }
+
+    .black,
+    .blue {
+        padding-bottom: 0;
+    }
+
+    .green .spiral {width: 360px;}
+
+    .contact-title {font-size: 3.75rem;}
+
+    .contact-form-wrapper {width: 30rem;}
+
+    .contact-form-input,
+    .contact-form-input[type="email"],
+    .contact-form-input::placeholder {
+        font-size: 1.25rem;
+    }
+
+    .email {
+        height: 3.93rem;
+        margin-bottom: 1.06rem;
+    }
+
+    .message {height: 10.75rem;}
+
+    .contact-form-button {
+        height: 4.88rem;
+        font-size: 1.62rem;
+    }
+
+    .buttons-block {
+        width: 60%;
+    }
+
+    .language-selector, .language-selector a {
+        font-size: 20px;
+    }
+
+    .language-selector {
+        margin-right: 3rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .buttons-block {
+        width: 65%;
+    }
+}
+
+@media (max-width: 908px) {
+    .accordion-spiral {
+        max-width: 556px;
+        left: -17rem;
+    }
+
+    .vector {width: 50rem;}
+
+    .cards {grid-template-columns: 1fr 450px;}
+
+    .card-icon {width: 1.5rem}
+
+    .card-content {padding-left: 1rem;}
+
+    .green .card-description {width: 442px;}
+
+    .contact-form-wrapper {width: 23.75rem;}
+
+    .buttons-block {width: 60%;}
+}
+
+@media only screen and (max-width: 890px) and (orientation: landscape) {
+    .buttons-block{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 890px) {
+    .buttons-block {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 825px) {
+    .card-icon {
+        width: 1.25rem;
+        margin-right: 0.5rem;
+    }
+
+    .card-title {font-size: 2.3rem;}
+
+    .card-description {
+        font-size: 1rem;
+        margin-top: 1.3rem;
+        margin-left: 1.8rem;
+    }
+
+    .language-selector {
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 772px) {
+    .language-selector, .language-selector a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 744px) {
+    .logo {width: 176px;}
+
+    .hero-spiral {
+        width: 529px;
+        right: -120px;
+        top: -150px;
+        transform: rotate(349deg);
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        max-width: 701px;
+        margin-top: 8.31rem;
+    }
+
+    .hero-arrow {
+        width: 1.88rem;
+        height: 1.88rem;
+        margin-left: 2.5rem;
+    }
+
+    .call-to-action {margin-bottom: 40px;}
+
+    .cards {grid-template-columns: 1fr 395px;}
+
+    .accordion-block {margin-bottom: 0;}
+
+    .card-content {padding: 1rem 1rem 0 1rem;}
+
+    .green .spiral {width: 320px;}
+
+    .green .card-description {width: 24rem;}
+
+    .contact-title {font-size: 3.1rem;}
+
+    .contact-form-input,
+    .contact-form-input[type="email"],
+    .contact-form-input::placeholder {
+        font-size: 1.25rem;
+    }
+
+    .language-selector {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 693px) {
+    .accordion-block {
+        padding-right: 1.2rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "green"
+            "black"
+            "blue"
+            "light-blue"
+    }
+
+    .vector {
+        display: none;
+    }
+
+    .contact-block {flex-wrap: wrap;}
+
+    .contact-form-wrapper {
+        width: 100%;
+        margin-top: 31px;
+    }
+}
+
+@media (max-width: 675px) {
+    .buttons-block {
+        width: 80%;
+        justify-content: end;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .green .spiral {display: none;}
+
+    .green .card-description {
+        width: 100%;
+    }
+
+    .green .card-content {
+        padding-right: 2.5rem;
+    }
+
+    .projects-header {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .language-selector {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 579px) {
+    .language-selector:first-child {
+        margin-right: 0.5rem;
+    }
+
+    .language-selector:last-child {
+        margin-left: 0.5rem;
+        margin-right: 0.6rem;
+    }
+}
+
+@media (max-width: 545px) {
+    .logo {width: 135px;}
+}
+
+@media (max-width: 533px) {
+    .accordion-spiral {
+        max-width: 485px;
+    }
+
+    .language-selector, .language-selector a {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 483px) {
+    .projects-header {
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+    }
+
+    .hero-spiral {
+        transform: rotate(300deg);
+        width: 450px;
+        right: -158px;
+        top: -110px;
+    }
+
+    .accordion-spiral {
+        max-width: 490px;
+        left: -16rem;
+    }
+
+    .green, .black, .blue, .lightBlue {position: relative;}
+
+    .black{background-color: #1B1C1D}
+
+    .green-spiral-mobile {
+        display: block;
+        position: absolute;
+        bottom: -90px;
+        width: 430px;
+    }
+
+    .black-spiral-mobile {
+        display: block;
+        position: absolute;
+        bottom: -120px;
+        width: 432px;
+    }
+
+    .blue-spiral-mobile {
+        display: block;
+        position: absolute;
+        bottom: -288px;
+        right: -87px;
+        transform: rotate(294deg);
+    }
+
+    .lightBlue-spiral-mobile {
+        display: block;
+        position: absolute;
+        bottom: -232px;
+        right: -20px;
+    }
+
+    .card-content {
+        padding-bottom: 9rem;
+    }
+
+    .bold {font-family: "Inter"!important;}
+
+    .buttons-block {
+        width: 40%;
+    }
+
+    .projects-links-button {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 433px) {
+    .logo {width: 137px;}
+
+    .hero-title {font-size: 1.8rem;}
+
+    .hero-arrow {
+        height: 1.2rem;
+        margin-left: 1.5rem;
+    }
+
+    .green-spiral-mobile {
+        bottom: 0;
+        width: 383px;
+    }
+
+    .black-spiral-mobile {
+        bottom: -77px;
+        width: 384px;
+    }
+
+    .lightBlue-spiral-mobile {
+        right: -31px;
+    }
+
+    .accordion-spiral {display: none;}
+
+    .accordion-block {
+        padding-right: 4rem;
+        padding-left: 4rem;
+        margin: 3.5rem auto 0 auto;
+    }
+
+    .call-to-action {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 390px) {
+    .accordion-block {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+
+    .green-spiral-mobile {
+        width: 100%;
+    }
+
+    .buttons-block {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo {width: 118px;}
+
+    .hero-title {font-size: 1.6rem;}
+
+    .hero-spiral {
+        width: 450px;
+        right: -190px;
+        top: -120px;
+    }
+
+    .hero-arrow {
+        width: 18px;
+        height: 18px;
+        margin-left: 15px;
+    }
+
+    .accordion-block {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-top: 3.44rem;
+        width: 100%;
+    }
+
+    .black-spiral-mobile {
+        bottom: 0;
+        width: 315px;
+    }
+
+    .card-content {
+        padding-bottom: 7rem;
+    }
+
+    .green .card-description {
+        width: calc(100% - 30px);
+        padding-right: 0.8rem;
+    }
+}
+
+

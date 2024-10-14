@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'NoiGroteskTrial bold';
+  src: url("../../assets/fonts/NoiGroteskTrial-Bold.ttf");
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noi Variable Flex Trial';
+  src: url("../../assets/fonts/NoiVariableFlexTrialGX.ttf");
+    font-display: swap;
+}
+
+.content-page-wrapper {
+  background-color: #CFE0F7;
+    overflow-x: hidden;
+}
+
+.cookie-content {
+    max-width: 1680px;
+    padding-left: 3.87rem;
+    padding-right: 3.87rem;
+    margin: 0 auto;
+}
+
+.cookie-title {
+  font-family: "NoiGroteskTrial bold";
+  font-size: 124px;
+  margin-top: 40px;
+}
+
+.cookie-description {
+    font-family: "Inter";
+    font-size: 20px;
+    margin-top: 45px;
+    margin-left: 85px;
+}
+
+.long {
+    max-width: 680px;
+}
+
+.cookie-badge {
+  max-width: 400px;
+  padding: 22px 70px;
+  margin-top: 16px;
+  margin-bottom: 90px;
+  background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 57px;
+  font-family: "Noi Variable Flex Trial";
+  font-size: 26px;
+}
+
+.cookie-cards {
+  margin-bottom: 55px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 680px 1fr 680px;
+  grid-auto-rows: auto;
+  grid-template-areas:
+          "one one one"
+          "two two three"
+          "four four four"
+          "five five five"
+          "six seven seven"
+          "eight eight eight"
+          "nine ten ten"
+          "eleven eleven eleven"
+          "twelve twelve thirteen"
+}
+
+.cookie-list li {
+    margin-bottom: 30px;
+}
+
+.cookie-list {
+    margin-left: 22px;
+}
+
+.cookie-paragraph {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1600px) {
+    .cookie-cards {
+        grid-template-columns: 33.75rem 1fr 33.75rem;
+    }
+
+    .cookie-content {
+        padding-left: 1.56rem;
+        padding-right: 1.56rem;
+    }
+
+    .cookie-description {
+        margin-left: 70px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1170px) {
+    .cookie-cards {
+        grid-template-columns: 100%;
+        grid-template-areas:
+          "one"
+          "two"
+          "three"
+          "four"
+          "five"
+          "six"
+          "seven"
+          "eight"
+          "nine"
+          "ten"
+          "eleven"
+          "twelve"
+          "thirteen"
+    }
+
+    .cookie-content {
+        padding-left: 8.5rem;
+        padding-right: 8.5rem;
+    }
+
+    .cookie-title {
+        font-size: 90px;
+    }
+
+    .cookie-badge {
+        max-width: 261px;
+        font-size: 18px;
+        padding: 18px 41px;
+    }
+}
+
+@media (max-width: 744px) {
+    .cookie-content {
+        padding-left: 1.56rem;
+        padding-right: 1.56rem
+    }
+
+    .cookie-description {
+        margin-left: 50px;
+    }
+
+    .cookie-title {
+        font-size: 4.7rem;
+    }
+
+    .cookie-paragraph {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 550px) {
+    .cookie-title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 433px) {
+    .cookie-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .cookie-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .cookie-description {
+        margin-top: 15px;
+    }
+
+    .cookie-title {
+        font-size: 45px;
+    }
+
+    .cookie-badge {
+        max-width: 210px;
+        font-size: 16px;
+        padding: 14px 25px;
+    }
+}

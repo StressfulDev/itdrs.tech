@@ -1,0 +1,192 @@
+.animatedCoins {
+    margin: auto;
+    position: relative;
+    top: 9rem;
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.vertical-coins {
+    top: -17rem;
+    position: relative;
+}
+
+@media (max-width: 1680px) {
+    .vertical-coins {top: -14.5rem;}
+}
+
+@media (max-width: 1500px) {
+    .vertical-coins {
+        top: -14.7rem;
+        left: 2rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .vertical-coins {left: 0;}
+}
+
+@media (max-width: 1130px) {
+    .vertical-coins {
+        top: -15.2rem;
+        left: 2rem;
+    }
+}
+
+@media (max-width: 1110px) {
+    .vertical-coins {top: -15.3rem;}
+}
+
+@media (max-width: 1092px) {
+    .vertical-coins {top: -15.9rem;}
+}
+
+@media (max-width: 1075px) {
+    .vertical-coins {top: -16.5rem;}
+}
+
+@media (max-width: 1070px) {
+    .vertical-coins {
+        top: -15.3rem;
+        left: 1rem;
+    }
+}
+
+@media (max-width: 1053px) {
+    .vertical-coins {top: -15.9rem;}
+}
+
+@media (max-width: 1035px) {
+    .vertical-coins {top: -16.5rem;}
+}
+
+@media (max-width: 1024px) {
+    .vertical-coins {
+        top: -16.5rem;
+        left: -1rem;
+    }
+}
+
+@media (max-width: 1015px) {
+    .vertical-coins {top: -17.1rem;}
+}
+
+@media (max-width: 995px) {
+    .vertical-coins {top: -17.8rem;}
+}
+
+@media (max-width: 980px) {
+    .vertical-coins {top: -16.5rem;}
+}
+
+@media (max-width: 960px) {
+    .vertical-coins {top: -17.1rem;}
+}
+
+@media (max-width: 940px) {
+    .vertical-coins {
+        top: -19.6rem;
+        left: 2rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .vertical-coins {top: -20.2rem;}
+}
+
+@media (max-width: 842px) {
+    .vertical-coins {
+        top: -20.8rem;
+        left: 4rem;
+    }
+}
+
+@media (max-width: 812px) {
+    .vertical-coins {top: -21.5rem;}
+}
+
+@media (max-width: 745px) {
+    .vertical-coins {
+        top: -20rem;
+        left: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .vertical-coins {
+        top: -9rem;
+        left: 5rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .vertical-coins {left: 4rem;}
+}
+
+@media (max-width: 600px) {
+    .vertical-coins {left: 3.5rem;}
+}
+
+@media (max-width: 570px) {
+    .vertical-coins {left: 2.5rem;}
+}
+
+@media (max-width: 550px) {
+    .vertical-coins {left: 1.5rem;}
+}
+
+@media (max-width: 530px) {
+    .vertical-coins {left: 1rem;}
+}
+
+@media (max-width: 490px) {
+    .vertical-coins {left: 0}
+}
+
+@media (max-width: 460px) {
+    .vertical-coins {left: -1rem;}
+}
+
+@media (max-width: 440px) {
+    .vertical-coins {
+        left: -1.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .vertical-coins {
+        left: -2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .vertical-coins {
+        left: -3rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .vertical-coins {
+        left: -2.5rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .vertical-coins {
+        left: -3.3rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .vertical-coins {
+        left: -3.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .vertical-coins {
+        left: -4rem;
+    }
+}

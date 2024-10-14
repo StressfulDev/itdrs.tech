@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Noi Variable Flex Trial';
+    src: url("../../assets/fonts/NoiGroteskTrial-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NoiGroteskTrial bold';
+    src: url("../../assets/fonts/NoiGroteskTrial-Bold.ttf");
+    font-display: swap;
+}
+
+.footer {
+    background-color: #000000;
+    max-height: 390px;
+}
+
+.footer-wrap {
+    max-width: 1680px;
+    max-height: 390px;
+    margin: 0 auto;
+    padding: 77px 62px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: "Noi Variable Flex Trial";
+    font-size: 21px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.footer-logo {cursor: pointer; width: 100%;}
+
+.footer-contacts-wrap {display: flex;}
+
+.footer-wrap a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-contacts {
+    color: #FFFFFF;
+    margin-bottom: 190px;
+    padding-right: 20px;
+}
+
+.footer-title {font-weight: 600;}
+
+.footer-mb {margin-bottom: 38px;}
+
+.cookie a:hover,
+.phone a:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+    .footer-wrap {font-size: 1.12rem;}
+}
+
+@media (max-width: 744px) {
+    .footer-logo {
+        width: 6.87rem;
+        margin-bottom: 37px;
+    }
+
+    .footer {max-height: 365px;}
+
+    .footer-wrap {
+        max-height: 365px;
+        flex-wrap: wrap;
+        font-size: 16px;
+        padding-left: 1.56rem;
+        padding-right: 1.56rem
+    }
+}
+
+@media (max-width: 465px) {
+    .footer, .footer-wrap {max-height: 420px;}
+}
+
+@media (max-width: 433px) {
+    .footer-contacts-wrap {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

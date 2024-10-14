@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'NoiGroteskTrial bold';
+    src: url("../../assets/fonts/NoiGroteskTrial-Bold.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Variable Flex Trial';
+    src: url("../../assets/fonts/NoiGroteskTrial-Regular.ttf");
+    font-display: swap;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #212121;
+    max-width: 960px;
+    padding-bottom: 5px;
+    transition: height 1s linear;
+
+}
+
+.accordion-header {
+    display: flex;
+}
+
+.accordion-item:last-child {
+    border: none;
+}
+
+.accordion-sup {
+    font-family: "Noi Variable Flex Trial";
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 35px;
+}
+
+.accordion-title {
+    font-family: "NoiGroteskTrial bold";
+    font-size: 7rem;
+    margin: 0 50px 20px 88px;
+    transition: 0.2s ease-in-out;
+}
+
+.accordion-icon {
+    margin-top: 15px;
+    cursor: pointer;
+    width: auto;
+}
+
+.accordion-description {
+    font-family: "Inter";
+    font-size: 1.75rem;
+    margin-left: 106px;
+    max-width: 780px;
+    transition: max-height 0.6s ease;
+    overflow: hidden;
+
+}
+
+.accordion-item:first-child .accordion-description {
+    margin-left: 96px;
+}
+
+@media (max-width: 1280px) {
+    .accordion-description {
+        max-width: 697px;
+        font-size: 1.6rem;
+    }
+
+    .accordion-title {
+        margin-right: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .accordion-title {
+        font-size: 6.25rem;
+        margin-left: 4rem;
+    }
+
+    .accordion-description {
+        font-size: 1.25rem;
+        margin-left: 80px;
+        max-width: 582px;
+
+    }
+
+    .accordion-item:first-child .accordion-description {
+        margin-left: 75px;
+    }
+}
+
+@media (max-width: 908px) {
+    .accordion-item {
+        max-width: 554px;
+
+    }
+
+    .accordion-title {
+        font-size: 4.38rem;
+        margin-right: 25px;
+        margin-left: 2rem;
+    }
+
+    .accordion-icon {
+        width: 25px;
+        margin-top: 0;
+    }
+
+    .accordion-sup {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .accordion-description {
+        margin-left: 44px;
+    }
+
+    .accordion-item:first-child .accordion-description {margin-left: 37px;}
+}
+
+@media (max-width: 744px) {
+    .accordion-description {
+        font-size: 1.2rem;
+        max-width: 456px;
+    }
+}
+
+@media (max-width: 605px) {
+    .accordion-title {font-size: 3.8rem;}
+}
+
+@media (max-width: 530px) {
+    .accordion-title {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 483px) {
+    .accordion-title {font-size: 3rem;}
+
+    .accordion-description {max-width: 353px;}
+}
+
+@media (max-width: 433px) {
+    .accordion-item {
+        max-width: 300px;
+        border-bottom: 1px solid #969696;
+    }
+
+    .accordion-header {align-items: start}
+
+    .accordion-title {
+        font-size: 2.7rem;
+        margin-right: 0.8rem;
+        margin-left: 0.6rem;
+        margin-bottom: 8px;
+    }
+
+    .accordion-icon {
+        width: 22px;
+        margin-top: 20px;
+    }
+
+    .accordion-sup {
+        font-size: 9px;
+        margin-top: 10px;
+    }
+
+    .accordion-description {
+        margin-left: 18px;
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    .accordion-item:first-child .accordion-description {margin-left: 12px;}
+}
+
+@media (max-width: 390px) {
+    .accordion-title {
+        font-size: 2.2rem;
+    }
+
+    .accordion-item {
+        max-width: 290px;
+    }
+
+    .accordion-icon {margin-top: 15px;}
+}
+
+@media (max-width: 360px) {
+    .accordion-item {
+        align-items: flex-start;
+    }
+
+    .accordion-title {
+        font-size: 2rem;
+    }
+
+    .accordion-icon {
+        width: 19px;
+        margin-top: 13px;
+    }
+
+    .accordion-sup {
+        font-size: 9px;
+        margin-top: 10px;
+    }
+}
+

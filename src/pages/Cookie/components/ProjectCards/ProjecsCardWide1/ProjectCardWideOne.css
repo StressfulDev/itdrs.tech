@@ -1,0 +1,305 @@
+.label {
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 7px 31px;
+    text-transform: capitalize;
+}
+.project-card-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 45px;
+    line-height: 54px;
+    font-weight: 700;
+}
+.project-card-content {
+    padding: 31px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.labels-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 12px;
+    align-items: start;
+    z-index: 10;
+}
+.right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card-left-block {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+    justify-content: space-between;
+}
+
+@media (max-width: 1500px) {
+    .project-card-left-block {
+        padding-right: 1.5em;
+    }
+}
+
+@media (max-width: 1430px) {
+    .project-card-left-block {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .label {
+        font-size: 12px;
+    }
+
+    .project-card-left-block {width: 35%;}
+}
+
+@media (max-width: 1220px) {
+    .labels-container-target {margin-right: 1.5rem;}
+}
+
+@media (max-width: 1210px) {
+    .labels-container-target {margin-right: 2rem;}
+}
+
+@media (max-width: 1190px) {
+    .labels-container-target {margin-right: 3rem;}
+}
+
+@media (max-width: 1170px) {
+    .project-card-left-block {width: 40%;}
+}
+
+@media (max-width: 1160px) {
+    .labels-container-target {margin-right: 4rem;}
+}
+
+@media (max-width: 1150px) {
+    .labels-container-target {margin-right: 5.5rem;}
+}
+
+@media (max-width: 1130px) {
+    .labels-container-target {
+        margin-right: 6.5rem;
+    }
+}
+
+@media (max-width: 1110px) {
+    .labels-container-target {
+        margin-right: 7.5rem;
+    }
+}
+
+@media (max-width: 1090px) {
+    .labels-container-target {
+        margin-right: 8.5rem;
+    }
+}
+
+@media (max-width: 1060px) {
+    .labels-container-target {margin-right: 3rem;}
+}
+
+@media (max-width: 1050px) {
+    .labels-container-target {margin-right: 4rem;}
+}
+
+@media (max-width: 1030px) {
+    .labels-container-target {margin-right: 5rem;}
+}
+
+@media (max-width: 1024px) {
+    .labels-container-target {margin-right: 2rem;}
+
+    .label {padding: 7px 25px !important;}
+
+    .project-card-content {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .project-card-title-wide1 {max-width: 16rem !important;}
+}
+
+@media (max-width: 1010px) {
+    .labels-container-target {margin-right: 3rem;}
+}
+
+@media (max-width: 1000px) {
+    .labels-container-target {margin-right: 7rem;}
+}
+
+@media (max-width: 970px) {
+    .labels-container-target {margin-right: 7.5rem;}
+}
+
+@media (max-width: 960px) {
+    .labels-container-target {margin-right: 8rem;}
+}
+
+@media (max-width: 950px) {
+    .labels-container-target {margin-right: 9rem;}
+}
+
+@media (max-width: 940px) {
+    .labels-container-target {margin-right: -3rem;}
+
+    .project-card-left-block {
+        width: 50%;
+    }
+
+    .label {
+        padding: 7px 20px !important;
+    }
+}
+
+@media (max-width: 930px) {
+    .labels-container-target {margin-right: -2rem;}
+}
+
+@media (max-width: 910px) {
+    .labels-container-target {margin-right: 1rem;}
+}
+
+@media (max-width: 890px) {
+    .labels-container-target {margin-right: 3rem;}
+}
+
+@media (max-width: 880px) {
+    .labels-container-target {margin-right: 3.5rem;}
+}
+
+@media (max-width: 870px) {
+    .labels-container-target {margin-right: 4.5rem;}
+}
+
+@media (max-width: 860px) {
+    .labels-container-target {margin-right: 6rem;}
+}
+
+@media (max-width: 850px) {
+    .labels-container-target {margin-right: 7rem;}
+}
+
+@media (max-width: 840px) {
+    .labels-container-target {margin-right: 8rem;}
+}
+
+@media (max-width: 830px) {
+    .labels-container-target {margin-right: 9rem;}
+}
+
+@media (max-width: 830px) {
+    .labels-container-target {margin-right: 11rem;}
+}
+
+@media (max-width: 810px) {
+    .labels-container-target {margin-right: 12rem;}
+}
+
+@media (max-width: 800px) {
+    .labels-container-target {margin-right: 13rem;}
+}
+
+@media (max-width: 790px) {
+    .labels-container-target {margin-right: 9.5rem;}
+}
+
+@media (max-width: 780px) {
+    .labels-container-target {margin-right: 10.5rem;}
+}
+
+@media (max-width: 780px) {
+    .labels-container-target {margin-right: 11.5rem;}
+}
+
+@media (max-width: 760px) {
+    .labels-container-target {margin-right: 13rem;}
+}
+
+@media (max-width: 750px) {
+    .labels-container-target {margin-right: 14rem;}
+}
+
+@media (max-width: 744px) {
+    .labels-container-target {margin-right: 13.5rem;}
+
+    .project-card-left-block {padding-right: 0;}
+
+    .project-card-title-wide1 {
+        margin-right: 1rem !important;
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 730px) {
+    .labels-container-target {margin-right: 14.5rem;}
+}
+
+@media (max-width: 720px) {
+    .labels-container-target {margin-right: 12rem;}
+}
+
+@media (max-width: 710px) {
+    .labels-container-target {margin-right: 13rem;}
+}
+
+@media (max-width: 700px) {
+    .labels-container-target {margin-right: 15rem;}
+}
+
+@media (max-width: 680px) {
+    .labels-container-target {margin-right: 16rem;}
+}
+
+@media (max-width: 670px) {
+    .labels-container-target {margin-right: 17rem;}
+}
+
+@media (max-width: 660px) {
+    .labels-container-target {margin-right: 18rem;}
+}
+
+@media (max-width: 650px) {
+ .project-card-content {
+     align-items: flex-start;
+ }
+
+    .project-card-left-block {
+        width: 100%;
+    }
+
+    .labels-container-target {
+        margin-right: 0;
+    }
+
+
+    .project-card-title-wide1 {
+        max-width: 20rem !important;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .labels-container-target {
+        margin-left: 2.5rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .labels-container-target {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .labels-container-target {
+        margin-left: 4.5rem;
+    }
+}

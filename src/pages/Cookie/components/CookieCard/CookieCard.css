@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Noi Variable Flex Trial';
+    src: url("../../../../assets/fonts/NoiGroteskTrial-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../../../../assets/fonts/Inter-Regular.ttf");
+    font-display: swap;
+}
+
+.cookie-card {
+  display: flex;
+  border-radius: 48px;
+  background-color: #FFFFFF;
+}
+
+.cookie-card-content {
+  padding: 75px;
+}
+
+.cookie-card-title {
+  font-family: "Noi Variable Flex Trial";
+  font-size: 70px;
+  font-weight: 400;
+  white-space: pre-line;
+}
+
+.cookie-card-icon {
+  margin-right: 47px;
+  flex-shrink: 0;
+    width: auto;
+}
+
+@media (max-width: 1600px) {
+    .cookie-card-title {
+        font-size: 62px;
+    }
+
+    .cookie-card-content {
+        padding: 19px 50px 106px 19px;
+    }
+
+    .cookie-card-icon {
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .cookie-card-title {font-size: 52px;}
+
+    .cookie-card-icon {width: 30px;}
+}
+
+@media (max-width: 1024px) {
+    .cookie-card-title {font-size: 40px;}
+    .cookie-card-icon {margin-right: 20px;}
+}
+
+@media (max-width: 570px) {
+    .cookie-card-title {font-size: 32px;}
+
+    .cookie-card-icon {
+        width: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .cookie-card-content {
+        padding: 19px 20px 34px 20px;
+    }
+}

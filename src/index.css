@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content, .top-block {
+    max-width: 1680px;
+    padding-left: 3.87rem;
+    padding-right: 3.87rem;
+    margin: 0 auto;
+}
+
+.active {
+    opacity: 0;
+    animation: activeAnimate 1s forwards;
+}
+
+@keyframes activeAnimate {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

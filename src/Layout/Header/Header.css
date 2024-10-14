@@ -1,0 +1,38 @@
+.header-wrap {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 44px;
+    align-items: center;
+}
+
+.black-text {
+    color: black !important;
+}
+
+@media (max-width: 483px) {
+    .header {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .header {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .header :nth-child(2) {margin: auto;}
+}
+
+/*@media (max-width: 375px) {*/
+/*    .header {*/
+/*        padding-right: 20px;*/
+/*    }*/
+/*}*/

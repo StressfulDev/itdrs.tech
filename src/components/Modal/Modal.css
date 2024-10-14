@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Noi Variable Flex Trial';
+    src: url("../../assets/fonts/NoiVariableFlexTrialGX.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../../assets/fonts/Inter-Regular.ttf");
+    font-display: swap;
+}
+
+.modal-dialog {
+    position: relative;
+    max-height: 490px;
+    border-radius: 23px;
+    background-color: #388EFF;
+    overflow: hidden;
+    margin-top: 36px;
+    margin-bottom: 10px;
+}
+
+.modal-content {
+    position: relative;
+    color: #FFFFFF;
+    padding: 3rem 3.8rem 1rem 3rem;
+    border-radius: 4px;
+    overflow-y: hidden;
+}
+
+.modal-title {
+    font-family: "Noi Variable Flex Trial";
+    font-size: 90px;
+}
+
+.modal-descr {
+    font-family: "Inter";
+    font-size: 24px;
+    margin-top: 37px;
+    margin-left: 20px;
+    margin-bottom: 200px;
+}
+
+.modal-spiral {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1280px) {
+    .modal-dialog {
+        margin-top: 30px;
+        margin-bottom: 37px;
+    }
+
+    .modal-title {font-size: 70px;}
+
+    .modal-descr {font-size: 20px;}
+
+    .modal-spiral{right: -25px}
+}
+
+@media (max-width: 1024px) {
+    .modal-dialog {
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+
+    .modal-title {font-size: 65px;}
+
+    .modal-descr {font-size: 20px;}
+}
+
+@media (max-width: 908px) {
+    .modal-title {font-size: 55px;}
+
+    .modal-descr {font-size: 18px;}
+
+    .modal-spiral {width: 410px;}
+}
+
+@media (max-width: 744px) {
+    .modal-dialog {
+        margin-top: 14px;
+        margin-bottom: 0;
+    }
+
+    .modal-title {font-size: 45px;}
+
+    .modal-descr {font-size: 16px;}
+}
+
+@media (max-width: 693px) {
+    .modal-dialog {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .modal-spiral {
+        right: 0;
+        bottom: -30px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .modal-spiral {bottom: 0}
+}
+
+@media (max-width: 450px) {
+    .modal-dialog {height: 340px;}
+
+    .modal-title {font-size: 38px;}
+}
+
+@media (max-width: 360px) {
+    .modal-dialog {
+        height: 290px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .modal-title {font-size: 35px;}
+
+    .modal-descr {
+        font-size: 13px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .modal-spiral {
+        width: 100%;
+        right: 0;
+    }
+}
